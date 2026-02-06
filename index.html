@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VulpisKyro · Tu tienda online</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+ 
+</head>
+
+<body>
+
+<div class="landing">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="badge">🦊 VulpisKyro</div>
+        <h1>Creá tu <em>tienda online</em> fácilmente</h1>
+        <p class="sub">Vendé productos físicos o digitales sin comisiones abusivas.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#pricing">Quiero mi tienda</a>
+          <a class="btn btn-secondary" href="#modules">Ver qué incluye</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600" alt="VulpisKyro">
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section id="modules">
+    <h2>¿Qué incluye?</h2>
+    <p class="intro">Todo listo para vender online</p>
+    <div class="grid-3">
+      <div class="card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800"><div class="card-body"><h3>Tienda lista</h3><p>Plantilla optimizada para ventas.</p></div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800"><div class="card-body"><h3>Pedidos WhatsApp</h3><p>Pedidos directos y rápidos.</p></div></div>
+      <div class="card"><img src="https://images.pexels.com/photos/4103439/pexels-photo-4103439.jpeg?w=800"><div class="card-body"><h3>Guía paso a paso</h3><p>No necesitás saber programar.</p></div></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <h2>Planes</h2>
+    <p class="intro">Elegí el que mejor se adapte</p>
+
+    <div class="pricing-wrap">
+      <div class="card card-body">
+        <div class="price-old">$0</div>
+        <div class="price-now">Gratis</div>
+        <ul class="bullets">
+          <li><i class="fa fa-check"></i> Tienda básica</li>
+          <li><i class="fa fa-check"></i> Pedidos WhatsApp</li>
+        </ul>
+        <a class="btn btn-secondary" href="#">Empezar</a>
+        <div class="guarantee">Sin compromiso</div>
+      </div>
+
+      <div class="card card-body">
+        <div class="price-old">$4.500</div>
+        <div class="price-now">$3.000</div>
+        <ul class="bullets">
+          <li><i class="fa fa-check"></i> Tienda completa</li>
+          <li><i class="fa fa-check"></i> Diseño pro</li>
+        </ul>
+        <a class="btn btn-primary" href="#">Elegir Básico</a>
+        <div class="guarantee">Pago mensual</div>
+      </div>
+
+      <div class="card card-body">
+        <div class="price-old">$9.000</div>
+        <div class="price-now">$7.000</div>
+        <ul class="bullets">
+          <li><i class="fa fa-check"></i> Todo incluido</li>
+          <li><i class="fa fa-check"></i> Soporte premium</li>
+        </ul>
+        <a class="btn btn-primary" href="#">Elegir Pro</a>
+        <div class="guarantee">Ideal para escalar</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>VulpisKyro</h4>
+      <p>Tu tienda online sin complicaciones.</p>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>vulpiskyro@gmail.com</p>
+    </div>
+    <div>
+      <h4>Sobre nosotros</h4>
+      <p>Ayudamos a emprendedores a vender.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 VulpisKyro</div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    q.onclick=()=>q.parentElement.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
