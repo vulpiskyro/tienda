@@ -68,14 +68,13 @@
       .ctas{justify-content:center}
     }
     /* === FIX BOTONES PRICING === */
-.pricing-wrap .card-body {
+    .pricing-wrap .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* botones dentro de pricing */
-.pricing-wrap .btn {
+    }
+    /* botones dentro de pricing */
+    .pricing-wrap .btn {
   width: 100%;
   max-width: 240px;
   text-align: center;
@@ -84,13 +83,13 @@
 }
 
 /* BOTÓN VISTA PREVIA */
-.btn-preview {
-  background: transparent;
-  color: var(--accent);
-  border: 2px solid var(--accent);
-}
+    .btn-preview {
+     background: transparent;
+     color: var(--accent);
+     border: 2px solid var(--accent);
+    }
 
-/* hover elegante */
-.btn-preview:hover {
+    /* hover elegante */
+    .btn-preview:hover {
   background: rgba(255, 209, 102, 0.12);
-}
+    }
