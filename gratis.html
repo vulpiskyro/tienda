@@ -179,12 +179,11 @@
     </div>
 
     <h1>
-      Vista previa de tu <em>tienda online</em>
+      Prueba Gratuita <em>De 12 Dias</em>
     </h1>
 
     <p class="description">
-      Esta es una demostración de cómo se verá tu tienda básica.
-      Optimizada para celulares, rápida y lista para vender.
+      En VulpisKyro podés acceder a una prueba gratuita de 12 dias, solicitar tu producto y vivir la experiencia real de nuestra tienda.
     </p>
 
     <div class="info">
@@ -193,6 +192,7 @@
         <li><span>✔</span> Pedidos directos por WhatsApp</li>
         <li><span>✔</span> Sin comisiones</li>
         <li><span>✔</span> Lista para publicar</li>
+        <li><span>✔</span> +3 Producto para vender</li>
       </ul>
     </div>
 
@@ -200,11 +200,12 @@
     <form id="whatsapp-form">
       <input id="wa-name" type="text" placeholder="Tu nombre" required>
       <input id="wa-email" type="email" placeholder="Tu email" required>
-      <textarea id="wa-notes" placeholder="Mensaje opcional"></textarea>
+      <input id="wa-marca" type="text" placeholder="Tu marca"></textarea>
+      <textarea id="wa-notes" placeholder=""></textarea>
 
       <div class="actions">
         <button type="submit" class="btn btn-primary">
-          Activar tienda gratis
+          Activar prueba gratuita
         </button>
 
         <a href="#" class="btn btn-preview">
@@ -226,16 +227,18 @@
 
       const name = document.getElementById("wa-name").value;
       const email = document.getElementById("wa-email").value;
+      const marca = document.getElementById("wa-marca").value;
       const notes = document.getElementById("wa-notes").value;
 
       const message = `
-Hola! 
+Hola!
 Quiero activar la *Tienda Gratis*
 
- Nombre: ${name}
- Email: ${email}
+*Nombre*: ${name}
+*Email*: ${email}
+*Nombre de Marca*: ${marca}
 
-📝 Mensaje:
+ Mensaje:
 ${notes}
       `;
 
