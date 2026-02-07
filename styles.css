@@ -34,6 +34,7 @@
       border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
     .card img{width:100%;height:180px;object-fit:cover;border-radius:18px 18px 0 0}
     .card-body{padding:1.5rem;font-size:.95rem}
+   
 
     /* PRICING */
     .pricing-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
@@ -66,3 +67,30 @@
       .hero-inner,.pricing-wrap,.footer-grid,.grid-3{grid-template-columns:1fr;text-align:center}
       .ctas{justify-content:center}
     }
+    /* === FIX BOTONES PRICING === */
+.pricing-wrap .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* botones dentro de pricing */
+.pricing-wrap .btn {
+  width: 100%;
+  max-width: 240px;
+  text-align: center;
+  margin-top: 0.8rem;
+  white-space: nowrap; /* evita que se corte el texto */
+}
+
+/* BOTÓN VISTA PREVIA */
+.btn-preview {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+/* hover elegante */
+.btn-preview:hover {
+  background: rgba(255, 209, 102, 0.12);
+}
