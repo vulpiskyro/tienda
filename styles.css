@@ -69,22 +69,22 @@
     }
     /* === FIX BOTONES PRICING === */
     .pricing-wrap .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
     }
     /* botones dentro de pricing */
     .pricing-wrap .btn {
-  width: 100%;
-  max-width: 240px;
-  text-align: center;
-  margin-top: 0.8rem;
-  white-space: nowrap; /* evita que se corte el texto */
-}
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+    margin-top: 0.8rem;
+    white-space: nowrap; /* evita que se corte el texto */
+    }
 
-/* BOTÓN VISTA PREVIA */
-    .btn-preview {
-     background: transparent;
+    /* BOTÓN VISTA PREVIA */
+        .btn-preview {          
+        background: transparent;
      color: var(--accent);
      border: 2px solid var(--accent);
     }
@@ -93,3 +93,84 @@
     .btn-preview:hover {
   background: rgba(255, 209, 102, 0.12);
     }
+    /* === PREVIEW HERO (SIN IMAGEN) === */
+.preview-hero {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 3.5rem 2rem;
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: var(--shadow);
+  max-width: var(--max);
+  margin: 0 auto 4rem;
+}
+
+.preview-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.preview-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.preview-title em {
+  background: linear-gradient(135deg, var(--brand1), var(--brand2));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-style: normal;
+}
+
+.preview-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === MOBILE AJUSTES FINOS === */
+@media (max-width: 600px) {
+  .preview-hero {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .preview-sub {
+    font-size: 0.95rem;
+  }
+}
+/* === TITULO RESPONSIVE PROFESIONAL === */
+#product-ficha-container .product-title {
+  font-size: clamp(1.9rem, 5vw, 2.4rem);
+  font-weight: 800;
+  color: #1f2937;
+  line-height: 1.2;
+}
+
+/* === DESCRIPCIÓN MEJORADA === */
+#product-ficha-container .product-description {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+/* MOBILE FINO */
+@media (max-width: 640px) {
+  #product-ficha-container .product-title {
+    text-align: center;
+  }
+
+  #product-ficha-container .product-description {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #product-ficha-container #total-price {
+    display: block;
+    text-align: center;
+  }
+}
+
