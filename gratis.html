@@ -1,0 +1,623 @@
+<span><!--more--></span>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+      .post-header {
+        display: none !important; 
+      }
+      #product-ficha-container {
+        --tw-text-opacity: 1;
+        --tw-bg-opacity: 1;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #product-ficha-container *, #product-ficha-container *::before, #product-ficha-container *::after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+      }
+      #product-ficha-container .container { width: 100%; margin-left: auto; margin-right: auto; max-width: 1152px; padding: 1rem; }
+      #product-ficha-container .grid { display: grid; }
+      #product-ficha-container .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+      #product-ficha-container .gap-2 { gap: 0.5rem; }
+      #product-ficha-container .gap-4 { gap: 1rem; }
+      #product-ficha-container .gap-6 { gap: 1.5rem; }
+      #product-ficha-container .gap-8 { gap: 2rem; }
+      #product-ficha-container .gap-12 { gap: 3rem; }
+      #product-ficha-container .order-last { order: 9999; }
+      #product-ficha-container .flex { display: flex; }
+      #product-ficha-container .flex-1 { flex: 1 1 0%; }
+      #product-ficha-container .flex-grow { flex-grow: 1; }
+      #product-ficha-container .flex-shrink-0 { flex-shrink: 0; }
+      #product-ficha-container .flex-col { flex-direction: column; }
+      #product-ficha-container .flex-row { flex-direction: row; }
+      #product-ficha-container .items-center { align-items: center; }
+      #product-ficha-container .items-stretch { align-items: stretch; }
+      #product-ficha-container .items-start { align-items: flex-start; }
+      #product-ficha-container .justify-between { justify-content: space-between; }
+      #product-ficha-container .justify-center { justify-content: center; }
+      #product-ficha-container .flex-nowrap { flex-wrap: nowrap; }
+      #product-ficha-container .justify-start { justify-content: flex-start; }
+      #product-ficha-container .w-full { width: 100%; }
+      #product-ficha-container .w-16 { width: 4rem; }
+      #product-ficha-container .h-16 { height: 4rem; }
+      #product-ficha-container .w-20 { width: 5rem; }
+      #product-ficha-container .h-24 { height: 6rem; }
+      #product-ficha-container .max-w-lg { max-width: 32rem; }
+      #product-ficha-container .max-w-3xl { max-width: 48rem; }
+      #product-ficha-container .max-w-4xl { max-width: 56rem; }
+      #product-ficha-container .min-h-0 { min-height: 0px; }
+      #product-ficha-container .max-h-\[85vh\] { max-height: 85vh; }
+      #product-ficha-container .max-h-\[90vh\] { max-height: 90vh; }
+      #product-ficha-container .aspect-square { aspect-ratio: 1 / 1; }
+      #product-ficha-container .p-2 { padding: 0.5rem; }
+      #product-ficha-container .p-4 { padding: 1rem; }
+      #product-ficha-container .p-6 { padding: 1.5rem; }
+      #product-ficha-container .px-4 { padding-left: 1rem; padding-right: 1rem; }
+      #product-ficha-container .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+      #product-ficha-container .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+      #product-ficha-container .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+      #product-ficha-container .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+      #product-ficha-container .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+      #product-ficha-container .pb-2 { padding-bottom: 0.5rem; }
+      #product-ficha-container .mb-1 { margin-bottom: 0.25rem; }
+      #product-ficha-container .mb-2 { margin-bottom: 0.5rem; }
+      #product-ficha-container .mb-3 { margin-bottom: 0.75rem; }
+      #product-ficha-container .mb-4 { margin-bottom: 1rem; }
+      #product-ficha-container .mb-6 { margin-bottom: 1.5rem; }
+      #product-ficha-container .mb-8 { margin-bottom: 2rem; }
+      #product-ficha-container .mt-6 { margin-top: 1.5rem; }
+      #product-ficha-container .mt-12 { margin-top: 3rem; }
+      #product-ficha-container .text-xs { font-size: 0.75rem; line-height: 1rem; }
+      #product-ficha-container .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+      #product-ficha-container .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+      #product-ficha-container .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+      #product-ficha-container .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+      #product-ficha-container .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+      #product-ficha-container .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+      #product-ficha-container .font-bold { font-weight: 700; }
+      #product-ficha-container .font-extrabold { font-weight: 800; }
+      #product-ficha-container .font-semibold { font-weight: 600; }
+      #product-ficha-container .font-medium { font-weight: 500; }
+      #product-ficha-container .italic { font-style: italic; }
+      #product-ficha-container .text-center { text-align: center; }
+      #product-ficha-container .text-white { color: #ffffff; }
+      #product-ficha-container .text-gray-300 { color: #d1d5db; }
+      #product-ficha-container .text-gray-500 { color: #6b7280; }
+      #product-ficha-container .text-gray-600 { color: #4b5563; }
+      #product-ficha-container .text-gray-700 { color: #374151; }
+      #product-ficha-container .text-gray-800 { color: #1f2937; }
+      #product-ficha-container .text-yellow-400 { color: #facc15; }
+      #product-ficha-container .bg-white { background-color: #ffffff; }
+      #product-ficha-container .bg-gray-50 { background-color: #f9fafb; }
+      #product-ficha-container .bg-gray-100 { background-color: #f3f4f6; }
+      #product-ficha-container .bg-green-500 { background-color: #22c55e; }
+      #product-ficha-container .bg-blue-500 { background-color: #3b82f6; }
+      #product-ficha-container .bg-black\/80 { background-color: rgba(0, 0, 0, 0.8); }
+      #product-ficha-container .bg-black\/60 { background-color: rgba(0, 0, 0, 0.6); }
+      #product-ficha-container .border { border-width: 1px; }
+      #product-ficha-container .border-2 { border-width: 2px; }
+      #product-ficha-container .border-b { border-bottom-width: 1px; }
+      #product-ficha-container .border-t { border-top-width: 1px; }
+      #product-ficha-container .border-l { border-left-width: 1px; }
+      #product-ficha-container .border-r { border-right-width: 1px; }
+      #product-ficha-container .border-gray-200 { border-color: #e5e7eb; }
+      #product-ficha-container .border-gray-300 { border-color: #d1d5db; }
+      #product-ficha-container .border-transparent { border-color: transparent; }
+      #product-ficha-container .border-indigo-500 { border-color: #6366f1; }
+      #product-ficha-container .rounded-b-lg { border-bottom-right-radius: 0.5rem; border-bottom-left-radius: 0.5rem; }
+      #product-ficha-container .rounded-md { border-radius: 0.375rem; }
+      #product-ficha-container .rounded-lg { border-radius: 0.5rem; }
+      #product-ficha-container .shadow { box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1); }
+      #product-ficha-container .shadow-md { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1); }
+      #product-ficha-container .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1); }
+      #product-ficha-container .shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); }
+      #product-ficha-container .shadow-inner { box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.05); }
+      #product-ficha-container .overflow-hidden { overflow: hidden; }
+      #product-ficha-container .overflow-x-auto { overflow-x: auto; }
+      #product-ficha-container .overflow-y-auto { overflow-y: auto; }
+      #product-ficha-container .transition { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+      #product-ficha-container .transition-transform { transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+      #product-ficha-container .transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+      #product-ficha-container .duration-300 { transition-duration: 300ms; }
+      #product-ficha-container .pointer-events-none { pointer-events: none; }
+      #product-ficha-container .cursor-pointer { cursor: pointer; }
+      #product-ficha-container .hover\:text-gray-800:hover { color: #1f2937; }
+      #product-ficha-container .hover\:border-indigo-400:hover { border-color: #818cf8; }
+      #product-ficha-container .hover\:scale-105:hover { transform: scale(1.05); }
+      #product-ficha-container .hover\:bg-gray-100:hover { background-color: #f3f4f6; }
+      #product-ficha-container .hover\:bg-green-600:hover { background-color: #16a34a; }
+      #product-ficha-container .hover\:bg-blue-600:hover { background-color: #2563eb; }
+      #product-ficha-container .focus\:outline-none:focus { outline: 2px solid transparent; outline-offset: 2px; }
+      #product-ficha-container .focus\:ring-2:focus { box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); }
+      #product-ficha-container .focus\:ring-indigo-300:focus { --tw-ring-color: #a5b4fc; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #a5b4fc;}
+      #product-ficha-container .focus\:ring-indigo-500:focus { --tw-ring-color: #6366f1; box-shadow: 0 0 0 2px #fff, 0 0 0 4px #6366f1; }
+      #product-ficha-container .focus\:border-indigo-500:focus { border-color: #6366f1; }
+      #product-ficha-container .relative { position: relative; }
+      #product-ficha-container .absolute { position: absolute; }
+      #product-ficha-container .fixed { position: fixed; }
+      #product-ficha-container .inset-0 { top: 0px; right: 0px; bottom: 0px; left: 0px; }
+      #product-ficha-container .top-4 { top: 1rem; }
+      #product-ficha-container .right-4 { right: 1rem; }
+      #product-ficha-container .z-10 { z-index: 10; }
+      #product-ficha-container .z-50 { z-index: 50; }
+      #product-ficha-container .z-60 { z-index: 60; }
+      #product-ficha-container .list-disc { list-style-type: disc; }
+      #product-ficha-container .list-inside { list-style-position: inside; }
+      #product-ficha-container .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
+      #product-ficha-container .object-cover { object-fit: cover; }
+      #product-ficha-container .object-contain { object-fit: contain; }
+      #product-ficha-container .modal-thumbnail.active { border-color: #6366F1; box-shadow: 0 0 0 2px #A5B4FC; }
+      #product-ficha-container .hidden { display: none; }
+      #product-ficha-container .swiper-pagination-bullet-active { background-color: #4B5563; }
+      #product-ficha-container .swiper-slide { display: flex !important; flex-direction: column !important; justify-content: center !important; align-items: center !important; }
+      #product-ficha-container input, #product-ficha-container select, #product-ficha-container textarea { font-size: 1rem; padding: 0.5rem 0.75rem; border-radius: 0.375rem; border: 1px solid #d1d5db; width: 100%; transition: box-shadow 0.15s ease-in-out; }
+      #product-ficha-container input:focus, #product-ficha-container select:focus, #product-ficha-container textarea:focus { border-color: #6366f1; box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25); outline: none; }
+      #product-ficha-container button { font-family: inherit; }
+      /* CUSTOM REVIEWS STYLES */
+      #product-ficha-container .reviews-carousel-container { max-width: 100%; margin-left: auto; margin-right: auto; }
+      #product-ficha-container .swiper-pagination { position: static; margin-top: 1.5rem; }
+      #product-ficha-container .swiper-pagination-bullet { width: 10px; height: 10px; background-color: #d1d5db; opacity: 1; }
+      #product-ficha-container .swiper-button-prev-custom, #product-ficha-container .swiper-button-next-custom { position: absolute; top: 50%; transform: translateY(-50%); width: 2rem; height: 2rem; background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 9999px; box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1); color: #4b5563; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease-in-out; z-index: 10; }
+      #product-ficha-container .swiper-button-prev-custom svg, #product-ficha-container .swiper-button-next-custom svg { width: 1rem; height: 1rem; }
+      #product-ficha-container .swiper-button-prev-custom:hover, #product-ficha-container .swiper-button-next-custom:hover { background-color: #f3f4f6; transform: translateY(-50%) scale(1.05); }
+      #product-ficha-container .swiper-button-prev-custom { left: 0.25rem; }
+      #product-ficha-container .swiper-button-next-custom { right: 0.25rem; }
+      #product-ficha-container .swiper-button-disabled { opacity: 0.35; cursor: not-allowed; background-color: #f9fafb; }
+      @media (min-width: 640px) {
+        #product-ficha-container .container { padding: 1.5rem; }
+        #product-ficha-container .sm\:py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+        #product-ficha-container .sm\:px-0 { padding-left: 0; padding-right: 0; }
+        #product-ficha-container .sm\:flex-row { flex-direction: row; }
+        #product-ficha-container .sm\:items-center { align-items: center; }
+        #product-ficha-container .sm\:w-auto { width: auto; }
+        #product-ficha-container .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        #product-ficha-container .sm\:col-span-2 { grid-column: span 2 / span 2; }
+        #product-ficha-container .swiper-button-prev-custom, #product-ficha-container .swiper-button-next-custom { width: 2.5rem; height: 2.5rem; }
+        #product-ficha-container .swiper-button-prev-custom svg, #product-ficha-container .swiper-button-next-custom svg { width: 1.25rem; height: 1.25rem; }
+        #product-ficha-container .swiper-button-prev-custom { left: -1.25rem; }
+        #product-ficha-container .swiper-button-next-custom { right: -1.25rem; }
+      }
+      @media (min-width: 768px) { #product-ficha-container .md\:p-6 { padding: 1.5rem; } }
+      @media (min-width: 1024px) {
+        #product-ficha-container .container { padding: 2rem; }
+        #product-ficha-container .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        #product-ficha-container .lg\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+        #product-ficha-container .lg\:col-span-1 { grid-column: span 1 / span 1; }
+        #product-ficha-container .lg\:col-span-4 { grid-column: span 4 / span 4; }
+        #product-ficha-container .lg\:order-first { order: -9999; }
+        #product-ficha-container .lg\:flex-col { flex-direction: column; }
+        #product-ficha-container .lg\:mt-16 { margin-top: 4rem; }
+        #product-ficha-container .lg\:hidden { display: none; }
+        #product-ficha-container .lg\:block { display: block; }
+      }
+    </style>
+<div id="product-ficha-container">
+    <!-- Image Modal -->
+    <div id="image-modal" class="hidden fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[85vh] flex flex-col p-4 relative">
+            <button id="modal-close-button" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+            <div class="w-full flex-1 min-h-0 p-4">
+                <img id="modal-main-image" src="" alt="Product full view" class="w-full h-full object-contain">
+            </div>
+            <div class="w-full flex-shrink-0 h-24 overflow-x-auto flex flex-nowrap items-center justify-center gap-2 p-2">
+                
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZJ8OsgDghcjbboGFt-Dbj15f_5eeLk7ClMxrxE_kSw8Z-7vYnUY70JAapx3h0fdJgP4xqCvXiMi1viu1NUMIA6akQZZVi784DlAPhxv3PVmCKBd6-ua1OfQzLpHxtcPt59wWo6dC73n93NLeOEAr9tOPugTiZC5yGkw6ZzkOsJYrv6mlOFrP4qgxU4UzQ/s1600/photo-1498050108023-c5249f4df085.jpg" class="modal-thumbnail w-16 h-16 object-cover rounded-md cursor-pointer border-2 border-transparent hover:border-indigo-400" data-index="0" alt="Modal thumbnail 1">
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8" id="product-card" style="
+    margin-top: -39px;
+">
+        <!-- Mobile Title -->
+        <h1 class="text-3xl font-bold text-gray-800 mb-4 lg:hidden">Tienda Prueba Gratis </h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Image Gallery -->
+            <div class="grid grid-cols-1 gap-4">
+                <div class="aspect-square w-full bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <img id="main-product-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZJ8OsgDghcjbboGFt-Dbj15f_5eeLk7ClMxrxE_kSw8Z-7vYnUY70JAapx3h0fdJgP4xqCvXiMi1viu1NUMIA6akQZZVi784DlAPhxv3PVmCKBd6-ua1OfQzLpHxtcPt59wWo6dC73n93NLeOEAr9tOPugTiZC5yGkw6ZzkOsJYrv6mlOFrP4qgxU4UzQ/s1600/photo-1498050108023-c5249f4df085.jpg" alt="Product Image" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                 <div class="flex flex-row items-start gap-2">
+                    
+                <div class="gallery-thumbnail relative w-16 h-16 cursor-pointer rounded-md overflow-hidden border-2 border-indigo-500 shadow" data-index="0">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZJ8OsgDghcjbboGFt-Dbj15f_5eeLk7ClMxrxE_kSw8Z-7vYnUY70JAapx3h0fdJgP4xqCvXiMi1viu1NUMIA6akQZZVi784DlAPhxv3PVmCKBd6-ua1OfQzLpHxtcPt59wWo6dC73n93NLeOEAr9tOPugTiZC5yGkw6ZzkOsJYrv6mlOFrP4qgxU4UzQ/s1600/photo-1498050108023-c5249f4df085.jpg" alt="Product thumbnail 1" class="w-full h-full object-cover">
+                </div>
+            
+                </div>
+            </div>
+            <!-- Product Details -->
+            <div class="flex flex-col justify-start">
+                <!-- Desktop Title -->
+                <h1 class="hidden lg:block text-3xl font-bold text-gray-800 mb-2">Tienda Prueba Gratis </h1>
+                
+                <!-- Price -->
+                <div class="mb-4">
+                    <span class="text-4xl font-extrabold" style="color: #ffd166 ;" id="total-price">$0.00</span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-600 mb-6">un sitio basico que te dejara probar nuestras funciones para potebnciar tu tienda a una forma mas profesional </p>
+                
+                <!-- Actions: Quantity and Buy Button -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-6">
+                    <div class="flex items-center gap-2">
+                        <label for="quantity-display" class="font-semibold text-gray-700 flex-shrink-0">Cantidad:</label>
+                        <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden shadow-sm bg-white">
+                            <button id="quantity-minus" aria-label="Disminuir cantidad" class="px-4 py-2 text-lg text-gray-600 hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400">-</button>
+                            <span id="quantity-display" class="px-5 py-2 text-center font-medium w-16 border-l border-r border-gray-300">1</span>
+                            <button id="quantity-plus" aria-label="Aumentar cantidad" class="px-4 py-2 text-lg text-gray-600 hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400">+</button>
+                        </div>
+                    </div>
+                    <button id="buy-button" class="w-full sm:w-auto flex-grow bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 flex items-center justify-center gap-2 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.01 2.011a10.25 10.25 0 0 1 8.11 4.145c1.378 1.912 2.021 4.143 2.021 6.344 0 5.66-4.581 10.24-10.24 10.24a10.27 10.27 0 0 1-5.32-1.425L2.25 22l.666-4.426a10.22 10.22 0 0 1-1.895-5.228c0-5.66 4.581-10.24 10.24-10.24h.749zM16.5 13.356c-.22-.11-.652-.321-1.127-.502-.475-.181-.652-.11-.882.221-.23.332-.731.928-.9 1.109-.168.181-.336.221-.557.11-.22-.11-.994-.362-1.89-1.163a8.13 8.13 0 0 1-1.31-1.63c-.15-.262-.034-.412.076-.523.097-.1.22-.262.33-.412.11-.15.15-.262.221-.443.07-.181.034-.332-.034-.443-.07-.11-.882-2.115-1.212-2.888-.32-.763-.662-.662-.882-.662h-.475c-.22 0-.475.07-.731.332-.256.262-1.025.988-1.025 2.406 0 1.417 1.05 2.796 1.2 3 .15.201 2.01 3.21 4.938 4.35 2.928 1.14 3.3 1.025 3.825.968.525-.057 1.417-.584 1.638-.998.22-.413.22-.773.15-.882z"></path></svg>
+                        Pedir por WhatsApp
+                    </button>
+                </div>
+
+                
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-3">Sobre este artículo</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li>3 Productos para su catalogo </li><li>Boton a WhatsApp con pedidos personalizados </li>
+            </ul>
+        </div>
+    
+            </div>
+        </div>
+        <!-- Reviews Section -->
+        <div class="mt-12 lg:mt-16">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Valoraciones de nuestros clientes</h2>
+            <div class="reviews-carousel-container relative px-4 sm:px-0">
+                <div class="swiper-container border border-gray-200 rounded-lg shadow-md overflow-hidden py-10 sm:py-12" style="background-color: #f5f5f5;">
+                    <div class="swiper-wrapper">
+                        
+        <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center text-center p-4 md:p-6 max-w-md mx-auto">
+                <div class="mb-4">
+                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                </div>
+                <p class="text-gray-600 italic mb-4">"El concepto es genial. Pude probar varios productos que me interesaban sin ningún compromiso. La interfaz es muy sencilla de usar."</p>
+                <p class="font-semibold text-gray-800">- Ana López</p>
+            </div>
+        </div>
+    
+        <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center text-center p-4 md:p-6 max-w-md mx-auto">
+                <div class="mb-4">
+                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                </div>
+                <p class="text-gray-600 italic mb-4">"Una excelente forma de descubrir cosas nuevas. Gracias a 'Tienda Prueba Gratis' encontré mi nuevo café favorito. La variedad podría ser mayor, pero las opciones actuales son buenas."</p>
+                <p class="font-semibold text-gray-800">- Carlos Gámez</p>
+            </div>
+        </div>
+    
+        <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center text-center p-4 md:p-6 max-w-md mx-auto">
+                <div class="mb-4">
+                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                </div>
+                <p class="text-gray-600 italic mb-4">"Me gusta la idea, pero a veces los productos interesantes se agotan muy rápido o no hay mucha variedad en stock. Necesita mejorar la reposición."</p>
+                <p class="font-semibold text-gray-800">- Sofía Pérez</p>
+            </div>
+        </div>
+    
+        <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center text-center p-4 md:p-6 max-w-md mx-auto">
+                <div class="mb-4">
+                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                </div>
+                <p class="text-gray-600 italic mb-4">"Increíble para ahorrar dinero y evitar compras impulsivas de cosas que luego no me gustan. Un servicio muy útil para el consumidor consciente."</p>
+                <p class="font-semibold text-gray-800">- Miguel Hernández</p>
+            </div>
+        </div>
+    
+        <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center text-center p-4 md:p-6 max-w-md mx-auto">
+                <div class="mb-4">
+                    <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-yellow-400"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                </div>
+                <p class="text-gray-600 italic mb-4">"La selección de productos es interesante, pero los tiempos de envío pueden ser un poco largos en ocasiones. Deberían optimizar la logística para una mejor experiencia."</p>
+                <p class="font-semibold text-gray-800">- Laura Martínez</p>
+            </div>
+        </div>
+    
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev-custom">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </div>
+                <div class="swiper-button-next-custom">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- WhatsApp Order Modal -->
+    <div id="whatsapp-modal" class="hidden fixed inset-0 z-60 bg-black/60 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-lg max-h-[90vh] flex flex-col relative">
+            <div class="p-6 border-b border-gray-200 flex justify-between items-center flex-shrink-0">
+                <h3 class="text-xl font-semibold text-gray-800">Mensaje en WhatsApp</h3>
+                <button id="whatsapp-modal-close-button" class="text-gray-400 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto">
+                <div class="flex items-center gap-4 mb-6">
+                    <img id="modal-product-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZJ8OsgDghcjbboGFt-Dbj15f_5eeLk7ClMxrxE_kSw8Z-7vYnUY70JAapx3h0fdJgP4xqCvXiMi1viu1NUMIA6akQZZVi784DlAPhxv3PVmCKBd6-ua1OfQzLpHxtcPt59wWo6dC73n93NLeOEAr9tOPugTiZC5yGkw6ZzkOsJYrv6mlOFrP4qgxU4UzQ/s1600/photo-1498050108023-c5249f4df085.jpg" class="w-16 h-16 rounded-md object-cover border flex-shrink-0">
+                    <div>
+                        <h4 id="modal-product-name" class="font-bold text-gray-800">Tienda Prueba Gratis </h4>
+                        <p id="modal-product-price" style="color: #ffd166 ;" class="font-semibold">$0.00</p>
+                        <p class="text-sm text-gray-600">Cantidad: <span id="modal-product-quantity">1</span></p>
+                    </div>
+                </div>
+                <form id="whatsapp-form" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="wa-name" class="text-sm font-medium text-gray-700 mb-1 block">Nombre</label>
+                        <input type="text" id="wa-name" name="name" required="true" />
+                    </div>
+                    <div>
+                        <label for="wa-email" class="text-sm font-medium text-gray-700 mb-1 block">Email</label>
+                        <input type="email" id="wa-email" name="email" required="true" />
+                    </div>
+                    <div>
+                        <label for="wa-city" class="text-sm font-medium text-gray-700 mb-1 block">Ciudad</label>
+                        <input type="text" id="wa-city" name="city" required="true" />
+                    </div>
+                     <div>
+                        <label for="wa-location" class="text-sm font-medium text-gray-700 mb-1 block">Ubicación</label>
+                        <input type="text" id="wa-location" name="location" placeholder="Barrio, Localidad..." />
+                    </div>
+                    <div>
+                        <label for="wa-country" class="text-sm font-medium text-gray-700 mb-1 block">País</label>
+                        <select id="wa-country" name="country" required="true">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="España">España</option>
+                            <option value="México">México</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="wa-postal" class="text-sm font-medium text-gray-700 mb-1 block">Código Postal</label>
+                        <input type="text" id="wa-postal" name="postal" />
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="wa-payment" class="text-sm font-medium text-gray-700 mb-1 block">Método de Pago</label>
+                        <select id="wa-payment" name="payment" required="true">
+                            <option value="Paypal">Paypal</option>
+                            <option value="Binance">Binance</option>
+                            <option value="Moneda Local">Moneda Local</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="wa-address" class="text-sm font-medium text-gray-700 mb-1 block">Tu dirección</label>
+                        <textarea id="wa-address" name="address" rows="3" required="true"></textarea>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="wa-notes" class="text-sm font-medium text-gray-700 mb-1 block">Notas del comprador</label>
+                        <textarea id="wa-notes" name="notes" rows="2" placeholder="Instrucciones especiales, referencias..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="p-6 border-t border-gray-200 bg-gray-50 rounded-b-lg flex-shrink-0">
+                <button type="submit" form="whatsapp-form" id="whatsapp-submit-button" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                    ENVIAR
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+(() => {
+    const initProductFicha = () => {
+        if (typeof Swiper === 'undefined') {
+            setTimeout(initProductFicha, 100);
+            return;
+        }
+
+        const productFichaContainer = document.getElementById('product-ficha-container');
+        if (!productFichaContainer) return;
+
+        const productCard = productFichaContainer.querySelector('#product-card');
+        if (!productCard) return;
+
+        const imageSources = ['https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZJ8OsgDghcjbboGFt-Dbj15f_5eeLk7ClMxrxE_kSw8Z-7vYnUY70JAapx3h0fdJgP4xqCvXiMi1viu1NUMIA6akQZZVi784DlAPhxv3PVmCKBd6-ua1OfQzLpHxtcPt59wWo6dC73n93NLeOEAr9tOPugTiZC5yGkw6ZzkOsJYrv6mlOFrP4qgxU4UzQ/s1600/photo-1498050108023-c5249f4df085.jpg'];
+        
+        // Main Page Gallery
+        const mainImage = productCard.querySelector('#main-product-image');
+        const thumbnails = productCard.querySelectorAll('.gallery-thumbnail');
+        const groupedThumbnail = productCard.querySelector('.gallery-thumbnail-grouped');
+        
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const index = parseInt(thumb.getAttribute('data-index'), 10);
+                if (mainImage) mainImage.src = imageSources[index];
+                
+                thumbnails.forEach(t => t.classList.remove('border-indigo-500', 'shadow'));
+                if(groupedThumbnail) groupedThumbnail.classList.remove('border-indigo-500', 'shadow');
+
+                thumb.classList.add('border-indigo-500', 'shadow');
+            });
+        });
+
+        // Image Modal Gallery
+        const modal = document.getElementById('image-modal');
+        const modalMainImage = document.getElementById('modal-main-image');
+        const modalCloseButton = document.getElementById('modal-close-button');
+        
+        if (modal) {
+            const modalThumbnails = modal.querySelectorAll('.modal-thumbnail');
+
+            const updateModalSelection = (index) => {
+                if (modalMainImage) modalMainImage.src = imageSources[index];
+                modalThumbnails.forEach((mt, i) => {
+                    mt.classList.toggle('active', i === index);
+                });
+                const activeThumb = modal.querySelector('.modal-thumbnail.active');
+                if(activeThumb) {
+                    activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                }
+            };
+
+            if (groupedThumbnail) {
+                groupedThumbnail.addEventListener('click', () => {
+                    const index = parseInt(groupedThumbnail.getAttribute('data-index'), 10);
+                    updateModalSelection(index);
+                    modal.classList.remove('hidden');
+                });
+            }
+
+            modalThumbnails.forEach(thumb => {
+                thumb.addEventListener('click', () => {
+                    const index = parseInt(thumb.getAttribute('data-index'), 10);
+                    updateModalSelection(index);
+                });
+            });
+
+            const closeModal = () => modal.classList.add('hidden');
+            if(modalCloseButton) modalCloseButton.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+        }
+
+
+        // Price Calculation & Quantity Control
+        const quantityMinusBtn = productCard.querySelector('#quantity-minus');
+        const quantityPlusBtn = productCard.querySelector('#quantity-plus');
+        const quantityDisplay = productCard.querySelector('#quantity-display');
+        const totalPriceEl = productCard.querySelector('#total-price');
+        const basePrice = 0;
+        let currentQuantity = 1;
+
+        const updatePriceAndDisplay = () => {
+            if (quantityDisplay) quantityDisplay.textContent = currentQuantity;
+            if (totalPriceEl) {
+                const totalPrice = (basePrice * currentQuantity).toFixed(2);
+                totalPriceEl.textContent = `$${totalPrice}`;
+            }
+        };
+
+        if (quantityMinusBtn && quantityPlusBtn && quantityDisplay && totalPriceEl) {
+            quantityMinusBtn.addEventListener('click', () => {
+                if (currentQuantity > 1) {
+                    currentQuantity--;
+                    updatePriceAndDisplay();
+                }
+            });
+
+            quantityPlusBtn.addEventListener('click', () => {
+                currentQuantity++;
+                updatePriceAndDisplay();
+            });
+        }
+        
+        // WhatsApp Modal Logic
+        const buyButton = productCard.querySelector('#buy-button');
+        const whatsappModal = document.getElementById('whatsapp-modal');
+        const whatsappModalCloseBtn = document.getElementById('whatsapp-modal-close-button');
+        const whatsappForm = document.getElementById('whatsapp-form');
+
+        if (buyButton && whatsappModal && whatsappModalCloseBtn && whatsappForm) {
+            const openWhatsAppModal = () => {
+                if (mainImage) document.getElementById('modal-product-image').src = mainImage.src;
+                if (totalPriceEl) document.getElementById('modal-product-price').textContent = totalPriceEl.textContent;
+                if (quantityDisplay) document.getElementById('modal-product-quantity').textContent = quantityDisplay.textContent;
+                whatsappModal.classList.remove('hidden');
+            };
+
+            const closeWhatsAppModal = () => {
+                whatsappModal.classList.add('hidden');
+            };
+
+            buyButton.addEventListener('click', openWhatsAppModal);
+            whatsappModalCloseBtn.addEventListener('click', closeWhatsAppModal);
+            whatsappModal.addEventListener('click', (e) => {
+                if (e.target === whatsappModal) closeWhatsAppModal();
+            });
+
+            whatsappForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const formData = new FormData(whatsappForm);
+                const data = Object.fromEntries(formData.entries());
+                
+                const quantity = quantityDisplay.textContent;
+                const total = totalPriceEl.textContent;
+                const phone = '5492634273255'.replace(/[^0-9]/g, '');
+                
+                let message = `*NUEVO PEDIDO*\n\n`;
+                message += `*Producto:* Tienda Prueba Gratis \n`;
+                message += `*Cantidad:* ${quantity}\n`;
+                message += `*Total:* ${total}\n\n`;
+                message += `*DATOS DE ENVÍO*\n`;
+                message += `*Nombre:* ${data.name}\n`;
+                message += `*Email:* ${data.email}\n`;
+                message += `*País:* ${data.country}\n`;
+                message += `*Ciudad:* ${data.city}\n`;
+                if(data.location) message += `*Ubicación:* ${data.location}\n`;
+                if(data.postal) message += `*C. Postal:* ${data.postal}\n`;
+                message += `*Dirección:* ${data.address}\n`;
+                if(data.payment) message += `*Método de Pago:* ${data.payment}\n`;
+                if(data.notes) message += `\n*Notas:* ${data.notes}\n`;
+
+                const encodedMessage = encodeURIComponent(message);
+                window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
+                
+                closeWhatsAppModal();
+            });
+        }
+
+        // Reviews Carousel
+        new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoHeight: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-custom',
+                prevEl: '.swiper-button-prev-custom',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    };
+    
+    initProductFicha();
+})();
+</script>
