@@ -1,146 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Tienda suspendida | VulpisKyro</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VulpisKyro · Tu tienda online</title>
 
-  <style>
-    :root {
-     --bg:#0a0f14;
-      --panel:#0e131a;
-      --text:#e6e9ee;
-      --muted:#a3b1c2;
-      --brand1:#ff6a00;
-      --brand2:#ffb703;
-      --accent:#ffd166;
-    }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    }
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 
-    body {
-      background:
-        radial-gradient(700px at 50% -20%, rgba(99,102,241,0.12), transparent 45%),
-        var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .card {
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0)),
-        var(--card);
-      border-radius: 18px;
-      padding: 42px 32px;
-      max-width: 520px;
-      width: 100%;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,0.06);
-      box-shadow:
-        0 25px 60px rgba(0,0,0,0.65),
-        inset 0 1px 0 rgba(255,255,255,0.04);
-    }
-
-    .logo {
-      font-size: clamp(24px, 5vw, 28px);
-      font-weight: 800;
-      margin-bottom: 18px;
-      letter-spacing: 0.6px;
-    }
-
-    .logo span {
-      color: var(--accent);
-    }
-
-    h1 {
-      font-size: clamp(18px, 4vw, 22px);
-      margin-bottom: 14px;
-      font-weight: 700;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 1.6;
-      color: var(--muted);
-      margin-bottom: 28px;
-    }
-
-    .btn {
-       display:block;
-      margin:2.5rem auto 0;
-      text-align:center;
-      max-width:240px;
-      padding:.9rem 1.6rem;
-      border-radius:999px;
-      font-weight:700;
-      text-decoration:none;
-      background:linear-gradient(135deg,var(--brand1),var(--brand2));
-      color:#000;
-      ;
-      color: #ffffff;
-      border-radius: 12px;
-      font-weight: 700;
-      text-decoration: none;
-      box-shadow: 0 14px 40px var(--accent-soft);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 22px 55px rgba(255, 238, 143, 0.55);
-    }
-
-    .footer {
-      margin-top: 28px;
-      font-size: 12px;
-      color: #7f86b5;
-      opacity: 0.9;
-    }
-
-    @media (max-width: 480px) {
-      .card {
-        padding: 32px 22px;
-      }
-
-      p {
-        font-size: 14px;
-      }
-    }
-  </style>
+ 
 </head>
 
 <body>
 
-  <div class="card">
-    <div class="logo">Vulpis<span>Kyro</span></div>
+<div class="landing">
 
-    <h1>Tienda temporalmente suspendida</h1>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="badge">🦊 VulpisKyro</div>
+        <h1>Creá tu <em>tienda online</em> fácilmente</h1>
+        <p class="sub">Vendé productos físicos o digitales sin comisiones abusivas.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#pricing">Quiero mi tienda</a>
+          <a class="btn btn-secondary" href="#modules">Ver qué incluye</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600" alt="VulpisKyro">
+      </div>
+    </div>
+  </section>
 
-    <p>
-      Esta tienda se encuentra pausada momentáneamente.<br>
-      Para reactivarla y continuar con el servicio, contactá con soporte.
-    </p>
+  <!-- MODULES -->
+  <section id="modules">
+    <h2>¿Qué incluye?</h2>
+    <p class="intro">Todo listo para vender online</p>
+    <div class="grid-3">
+      <div class="card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800"><div class="card-body"><h3>Tienda lista</h3><p>Plantilla optimizada para ventas.</p></div></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800"><div class="card-body"><h3>Pedidos WhatsApp</h3><p>Pedidos directos y rápidos.</p></div></div>
+      <div class="card"><img src="https://images.pexels.com/photos/4103439/pexels-photo-4103439.jpeg?w=800"><div class="card-body"><h3>Soporte Online</h3><p>No necesitás saber programar.</p></div></div>
+    </div>
+  </section>
 
-    
-<a class="btn" 
-   href="https://wa.me/+5492634273255?text=Hola%20VulpisKyro,%20quiero%20reactivar%20mi%20tienda.%20Gracias." 
-   target="_blank">
-   Contactar soporte
-</a>
+  <!-- PRICING -->
+  <section id="pricing">
+    <h2>Planes</h2>
+    <p class="intro">Elegí el que mejor se adapte</p>
 
-    <div class="footer">
-      © VulpisKyro · Plataforma de tiendas online
+    <div class="pricing-wrap">
+      <div class="card card-body">
+        <div class="price-old">$0</div>
+        <div class="price-now">Gratis</div>
+        <ul class="bullets">
+          <li><i class="fa fa-check"></i> Tienda básica</li>
+          <li><i class="fa fa-check"></i> Pedidos WhatsApp</li>
+        </ul>
+        <a class="btn btn-primary" href="gratis.html">Empezar</a>
+        <a class="btn btn-preview" href="#">Vista previa</a>
+        <div class="guarantee">Sin compromiso</div>
+      </div>
+
+      <div class="card card-body">
+        <div class="price-old">$4.500</div>
+        <div class="price-now">$3.000</div>
+        <ul class="bullets">
+          <li><i class="fa fa-check"></i> Tienda completa</li>
+          <li><i class="fa fa-check"></i> Diseño pro</li>
+        </ul>
+        <a class="btn btn-primary" href="#">Elegir Básico</a>
+        <a class="btn btn-preview" href="#">Vista previa</a>
+        <div class="guarantee">Pago mensual</div>
+      </div>
+
+      <div class="card card-body">
+        <div class="price-old">$9.000</div>
+        <div class="price-now">$7.000</div>
+        <ul class="bullets">
+          <li><i class="fa fa-check"></i> Todo incluido</li>
+          <li><i class="fa fa-check"></i> Soporte premium</li>
+        </ul>
+        <a class="btn btn-primary" href="#">Elegir Pro</a>
+        <a class="btn btn-preview" href="#">Vista previa</a>
+        <div class="guarantee">Ideal para escalar</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>VulpisKyro</h4>
+      <p>Tu tienda online sin complicaciones.</p>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="privacidad.html">Privacidad</a>
+      <a href="terminos.html">Términos</a>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p>vulpiskyro@gmail.com</p>
+      <p>+54 9 263 427 3255</p>
+    </div>
+    <div>
+      <h4>Sobre nosotros</h4>
+      <p>Ayudamos a emprendedores a vender.</p>
     </div>
   </div>
+  <div class="footer-bottom">© 2026 VulpisKyro</div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q=>{
+    q.onclick=()=>q.parentElement.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
